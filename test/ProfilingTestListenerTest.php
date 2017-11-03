@@ -1,8 +1,6 @@
 <?php
 
-namespace Santik\PhpunitProfiler;
-
-class ProfilingTestListenerTest extends \PHPUnit_Framework_TestCase
+class ProfilingTestListenerTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider timeColor

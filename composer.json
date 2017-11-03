@@ -14,16 +14,6 @@
         "phpunit/phpunit": "^4.6"
     },
     "autoload": {
-        "psr-4": {
-            "Santik\\PhpunitProfiler\\": ["src/"]
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Santik\\PhpunitProfiler\\": ["tests/unit/"]
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
+        "classmap": ["src/"]
     }
 }

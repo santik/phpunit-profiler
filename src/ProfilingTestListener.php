@@ -1,10 +1,5 @@
 <?php
 
-namespace Santik\PhpunitProfiler;
-
-use PHPUnit_Framework_BaseTestListener;
-use PHPUnit_Framework_Test;
-
 class ProfilingTestListener extends PHPUnit_Framework_BaseTestListener
 {
     const CRITICAL_TIME = 1.5;
