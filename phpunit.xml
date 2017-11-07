@@ -13,6 +13,11 @@
         </testsuite>
     </testsuites>
     <listeners>
-        <listener class="ProfilingTestListener" file="src/ProfilingTestListener.php"></listener>
+        <listener class="ProfilingTestListener" file="src/ProfilingTestListener.php">
+            <arguments>
+                <double>0.015</double><!--seconds-->
+                <double>0.001</double>
+            </arguments>
+        </listener>
     </listeners>
 </phpunit>

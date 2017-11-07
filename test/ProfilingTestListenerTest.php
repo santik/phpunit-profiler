@@ -14,11 +14,11 @@ class ProfilingTestListenerTest extends PHPUnit_Framework_TestCase
         $time = $data[0];
         $color  = $data[1];
 
-        $listener = new ProfilingTestListener();
+        $listener = new ProfilingTestListener(1.5, 1);
 
         $listener->endTest($test->reveal(), $time);
 
-        $this->expectOutputString("Test 'dummy test name to pad with 50 characters         ' time \033[".$color."m".number_format($time, 3)."\033[0m s." . "\n");
+        $this->expectOutputString("\nTest 'dummy test name to pad with 50 characters         ' time \033[".$color."m".number_format($time, 3)."\033[0m s.");
     }
 
     public function timeColor()
